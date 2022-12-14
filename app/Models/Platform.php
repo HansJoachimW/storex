@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Platform extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'platform_name',
+        'logo',
+        'subdistributor_id'
+    ];
 }

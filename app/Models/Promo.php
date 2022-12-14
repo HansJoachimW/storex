@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Promo extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'promo_name',
+        'uses',
+        'amount'
+    ];
 }

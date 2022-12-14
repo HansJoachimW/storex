@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Subdistributor extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'subdistributor_name'
+    ];  
 }
