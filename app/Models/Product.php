@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Product extends Model
@@ -18,24 +20,24 @@ class Product extends Model
     'brand_id'
   ];
 
-  public function carts(): HasOne
+  public function carts(): BelongsToMany
   {
-    return $this->hasOne(Cart::class);
+    return $this->belongsToMany(Cart::class);
   }
 
-  public function shops(): HasOne
+  public function platforms(): BelongsToMany
   {
-    return $this->hasOne(Shop::class);
+    return $this->belongsToMany(Platform::class);
   }
 
-  public function discounts(): HasOne
+  public function promos(): BelongsToMany
   {
-    return $this->hasOne(Discount::class);
+    return $this->belongsToMany(Promo::class);
   }
 
-  public function routes(): HasOne
+  public function producers(): BelongsToMany
   {
-    return $this->hasOne(Route::class);
+    return $this->belongsToMany(Producer::class);
   }
 
   public function brands(): HasOne

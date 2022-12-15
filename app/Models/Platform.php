@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Platform extends Model
@@ -21,8 +22,8 @@ class Platform extends Model
         return $this->hasOne(Subdistributor::class);
     }
 
-    public function shops(): HasOne
+    public function products(): HasMany
     {
-        return $this->hasOne(Shop::class);
+        return $this->hasMany(Product::class);
     }
 }

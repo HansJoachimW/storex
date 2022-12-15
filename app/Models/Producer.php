@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Producer extends Model
 {
@@ -14,8 +14,8 @@ class Producer extends Model
         'producer_name'
     ];
 
-    public function routes(): HasOne
+    public function products(): HasMany
     {
-        return $this->hasOne(Route::class);
+        return $this->hasMany(Product::class);
     }
 }

@@ -15,8 +15,10 @@ return new class extends Migration
     {
         Schema::create('routes', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(App\Models\Producer::class);
-            $table->foreignIdFor(App\Models\Product::class);
+            $table->unsignedBigInteger('producer_route');
+            $table->foreign('producer_route')->references('id')->on('producers')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedBigInteger('product_route');
+            $table->foreign('product_route')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
