@@ -4,7 +4,8 @@
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
-            <a class="navbar-brand" href="homePage.php">StoreX</a>
+            <a class="navbar-brand" href="#"><img src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/11/24/968e9cdc-8dc0-40be-96bd-649ac23b2424.png" alt="" width="50px" height=""></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -13,11 +14,11 @@
                 <div class="navbar-nav ms-auto">
                     <!--<a class="nav-item nav-link active" aria-current="page" href="#">StoreX</a>-->
 
-                    <a class="nav-item nav-link" href="koinPage.php">Coin List</a>
-                    <a class="nav-item nav-link" href="newRecomPage.php">New post</a>
-                    <a class="nav-item nav-link" href="userPage.php">Userpage</a>
-                    <a class="nav-item nav-link" href="CalculatorHP.php">Calculator</a>
-                    <a class="btn btn-warning" href="loginAdminPage.php" role="button">Admin</a>
+                    <a class="nav-item nav-link" href="koinPage.php">All Products</a>
+                    <a class="nav-item nav-link" href="newRecomPage.php">About Us</a>
+                    <a class="nav-item nav-link" href="userPage.php">Partners</a>
+                    <a class="nav-item nav-link" href="CalculatorHP.php">Contact</a>
+                    <a class="btn btn-info" href="loginAdminPage.php" role="button">Guest</a>
 
 
                 </div>
@@ -33,9 +34,9 @@
             <h1 class="display-4"><span>Discover</span> a world of possibilities <br> with Our <span>Products</span> now
             </h1>
             <hr class="my-4">
-            <a class="btn btn-warning btn-lg mx-2 my-2" href="mailto:storexindonesia@gmail.com" role="button">Reach us</a>
-            <a class="btn border-warning text-white btn-lg mx-2 my-2" href="https://t.me/+Lhrgz_kn04dkNjFl"
-                role="button">Join Community</a>
+            <a class="btn btn-info btn-lg mx-2 my-2" href="mailto:storexindonesia@gmail.com" role="button">Reach us</a>
+            <a class="btn border-info text-white btn-lg mx-2 my-2" href="https://nael.monster/kevin/assets/video/kevin.mp4"
+                role="button">Video kevin nyanyi</a>
         </div>
     </div>
     <!--Akhir Jumbotron-->
@@ -53,13 +54,13 @@
                     </div>
                     <div class="col-lg">
                         <img src="../img/hires.png" alt="..." class="float-left">
-                        <h4>Easy</h4>
-                        <p>Upload your recommendation with picture</p>
+                        <h4>Fast</h4>
+                        <p>Delivery in just a second</p>
                     </div>
                     <div class="col-lg">
                         <img src="../img/security.png" alt="..." class="float-left">
-                        <h4>Privacy</h4>
-                        <p>No need account to create recommendation</p>
+                        <h4>Guarantee</h4>
+                        <p>Easy return within 7 days</p>
                     </div>
                 </div>
             </div>
@@ -72,22 +73,20 @@
                 <img src="../img/pic1.jpg" alt="" class="img-fluid rounded ukGambar justify-content-center rounded">
             </div>
             <div class="col">
-                <h3>What is <span>Cryptocurrency</span>, Whats cool?</h3>
+                <h3>Apa yang <br> <span>StoreX Indonesia</span><br> Jual?</h3>
                 <div class="container mt-2 justify-content-center">
-                    <p>Digital or virtual currency that is secured by cryptography, which makes it nearly impossible to
-                        counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain
-                        technology—a distributed ledger enforced by a disparate network of computers.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos totam, voluptates delectus laborum fugit accusantium. Sit, nisi labore ut accusamus laboriosam alias sed laborum adipisci, cum debitis consequatur atque.</p>
                 </div>
 
                 <!-- <a href="" class="btn btn-primary">KLIK</a> -->
             </div>
             <figure class="text-center">
                 <blockquote class="blockquote fontKdam fst-italic">
-                    <h5>"Like the Internet, Bitcoin will change the way people interact and do business around the world"
+                    <h5>"Build your future smart home with StoreX Indonesia"
                     </h5>
                 </blockquote>
                 <figcaption class="blockquote-footer fst-italic">
-                    Erik Voorhees
+                    Kenneth Ganteng
                 </figcaption>
             </figure>
         </div>
