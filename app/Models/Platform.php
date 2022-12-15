@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Platform extends Model
 {
@@ -14,4 +15,14 @@ class Platform extends Model
         'logo',
         'subdistributor_id'
     ];
+
+    public function subdistributors(): HasOne
+    {
+        return $this->hasOne(Subdistributor::class);
+    }
+
+    public function shops(): HasOne
+    {
+        return $this->hasOne(Shop::class);
+    }
 }

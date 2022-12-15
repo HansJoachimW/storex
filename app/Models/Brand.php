@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Brand extends Model
 {
@@ -14,4 +15,9 @@ class Brand extends Model
         'logo',
         'origin'
     ];
+
+    public function products(): HasOne
+    {
+        return $this->hasOne(Product::class);
+    }
 }

@@ -6,20 +6,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Cart extends Model
+class Discount extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'id',
-        'user_id',
-        'product_id',
-        'subtotal'
+        'promo_id',
+        'product_id'
     ];
 
-    public function users(): HasMany
+    public function promos(): HasMany
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(Promo::class);
     }
 
     public function products(): HasMany

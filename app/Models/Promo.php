@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Promo extends Model
 {
@@ -14,4 +15,9 @@ class Promo extends Model
         'uses',
         'amount'
     ];
+
+    public function discounts(): HasOne
+    {
+        return $this->hasOne(Discount::class);
+    }
 }
