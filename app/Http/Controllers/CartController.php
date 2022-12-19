@@ -16,7 +16,9 @@ class CartController extends Controller
      */
     public function index()
     {
-        //
+        return view('cart', [
+            'cart' => Cart::paginate(2)
+        ]);
     }
 
     /**
@@ -47,6 +49,8 @@ class CartController extends Controller
                 'quantity' => $request->quantity
             ]);
         }
+        
+        return redirect('/');
     }
 
     /**
@@ -84,11 +88,7 @@ class CartController extends Controller
      */
     public function update(UpdateCartRequest $request, Cart $cart)
     {
-        $cart->update([
-            'brand_name' => $request->name,
-            'logo' => $request->file('image')->store('images', 'public'),
-            'origin' => $request->origin,
-        ]);
+        //
     }
 
     /**
@@ -99,6 +99,8 @@ class CartController extends Controller
      */
     public function destroy(Cart $cart)
     {
-        //
+        $cart->delete();
+
+        return redirect('/');
     }
 }

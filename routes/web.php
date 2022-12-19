@@ -19,11 +19,6 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-//about
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
 //welcome
 Route::get('/welcome', function () {
     return view('welcome');

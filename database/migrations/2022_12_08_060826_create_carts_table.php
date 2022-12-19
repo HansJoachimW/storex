@@ -19,6 +19,8 @@ return new class extends Migration
             $table->foreign('user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->unsignedBigInteger('added_products');
             $table->foreign('added_products')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
+            $table->integer('quantity');
+            $table->integer('stock');
             $table->double('subtotal', '12, 2');
             $table->timestamps();
         });

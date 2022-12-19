@@ -93,12 +93,12 @@ class BrandController extends Controller
             $brand->update([
                 'brand_name' => $request->name,
                 'logo' => $request->file('image')->store('images', 'public'),
-                'origin' => $request->origin,
+                'origin' => $request->origin
             ]);
         } else {
             $brand->update([
                 'name' => $request->name,
-                'origin' => $request->origin,
+                'origin' => $request->origin
             ]);
         }
 

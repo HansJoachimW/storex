@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('category');
             $table->double('price', 12, 2);
-            $table->integer('stock');
             $table->unsignedBigInteger('product_brand');
             $table->foreign('product_brand')->references('id')->on('brands')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
