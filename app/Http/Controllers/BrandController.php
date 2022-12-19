@@ -15,7 +15,9 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        return view('brand', [
+            'brands' => Brand::paginate(2)
+        ]);
     }
 
     /**
@@ -25,7 +27,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        return view('createproduct');
     }
 
     /**
@@ -36,7 +38,19 @@ class BrandController extends Controller
      */
     public function store(StoreBrandRequest $request)
     {
-        //
+        $this->validate($request, [
+            'brand_name' => 'required|string|max:155',
+            'logo' => 'required|image',
+            'origin' => 'required|string|max:155'
+        ]);
+
+        Brand::create([
+            'brand_name' => $request->name,
+            'logo' => $request->file('image')->store('images', 'public'),
+            'origin' => $request->origin
+        ]);
+
+        return redirect('/');
     }
 
     /**
@@ -47,7 +61,9 @@ class BrandController extends Controller
      */
     public function show(Brand $brand)
     {
-        //
+        return view('showbrand', [
+            'brand' => $brand
+        ]);
     }
 
     /**
@@ -58,7 +74,9 @@ class BrandController extends Controller
      */
     public function edit(Brand $brand)
     {
-        //
+        return view('updatebrand', [
+            'brand'  => $brand
+        ]);
     }
 
     /**
@@ -70,7 +88,21 @@ class BrandController extends Controller
      */
     public function update(UpdateBrandRequest $request, Brand $brand)
     {
-        //
+        if ($request->file('image')) {
+            unlink('storage/' . $brand->image);
+            $brand->update([
+                'brand_name' => $request->name,
+                'logo' => $request->file('image')->store('images', 'public'),
+                'origin' => $request->origin,
+            ]);
+        } else {
+            $brand->update([
+                'name' => $request->name,
+                'origin' => $request->origin,
+            ]);
+        }
+
+        return redirect('/');
     }
 
     /**
@@ -81,6 +113,8 @@ class BrandController extends Controller
      */
     public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+
+        return redirect('/');
     }
 }

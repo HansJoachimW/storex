@@ -15,6 +15,7 @@ class Cart extends Model
         'id',
         'user_id',
         'product_id',
+        'quantity',
         'subtotal'
     ];
 

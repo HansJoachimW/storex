@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cart;
 use App\Http\Requests\StoreCartRequest;
 use App\Http\Requests\UpdateCartRequest;
+use Illuminate\Support\Facades\DB;
 
 class CartController extends Controller
 {
@@ -25,7 +26,7 @@ class CartController extends Controller
      */
     public function create()
     {
-        //
+        return view('createcart');
     }
 
     /**
@@ -36,7 +37,16 @@ class CartController extends Controller
      */
     public function store(StoreCartRequest $request)
     {
-        //
+        if (!DB::table('carts')
+            ->where('item_id', '=', $request->itemid)
+            ->where('user_id', '=', $request->userid)
+            ->exists()) {
+            Cart::create([
+                'user_id' => $request->user_id,
+                'product_id' => $request->product_id,
+                'quantity' => $request->quantity
+            ]);
+        }
     }
 
     /**
@@ -47,7 +57,9 @@ class CartController extends Controller
      */
     public function show(Cart $cart)
     {
-        //
+        return view('showcart', [
+            'cart' => $cart
+        ]);
     }
 
     /**
@@ -58,7 +70,9 @@ class CartController extends Controller
      */
     public function edit(Cart $cart)
     {
-        //
+        return view('updatecart', [
+            'cart'  => $cart
+        ]);
     }
 
     /**
@@ -70,7 +84,11 @@ class CartController extends Controller
      */
     public function update(UpdateCartRequest $request, Cart $cart)
     {
-        //
+        $cart->update([
+            'brand_name' => $request->name,
+            'logo' => $request->file('image')->store('images', 'public'),
+            'origin' => $request->origin,
+        ]);
     }
 
     /**

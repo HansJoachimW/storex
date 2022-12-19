@@ -14,14 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//main
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
+//about
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+//welcome
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
+//admin
+Route::get('/admin', function() {
+    return view('admin/index');
+})->middleware(['admin']);
+
+//dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -32,4 +45,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
