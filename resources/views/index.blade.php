@@ -75,7 +75,7 @@
             <div class="col">
                 <h3>Apa yang <br> <span>StoreX Indonesia</span><br> Jual?</h3>
                 <div class="container mt-2 justify-content-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos totam, voluptates delectus laborum fugit accusantium. Sit, nisi labore ut accusamus laboriosam alias sed laborum adipisci, cum debitis consequatur atque.</p>
+                    <p>Pusatnya produk IT dan Elektronik Surabaya. Dijamin akan pelayanan serta kecepatan pengiriman <br> Seluruh paket harap video unboxing menunjukkan resi+ seluruh bagian paket hingga produk   </p>
                 </div>
 
                 <!-- <a href="" class="btn btn-primary">KLIK</a> -->
