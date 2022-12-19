@@ -88,14 +88,14 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner shadow-lg p-3 mb-5  rounded">
                 <div class="carousel-item active">
                     <img class="d-block w-100 rounded"
                         src="https://i.vgy.me/3WfPV1.png"
                         alt="First slide">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 rounded"
+                <div class="carousel-item rounded">
+                    <img class="d-block w-100"
                         src="https://i.vgy.me/WVhkMq.png"
                         alt="Second slide">
                 </div>
