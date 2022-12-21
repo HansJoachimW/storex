@@ -1,19 +1,9 @@
 @extends('layouts.main')
 
 @section('container')
-    <meta name="description" content="Bootstrap 4 Carousel - Random Slide" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    {{-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script> --}}
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    
 
+   
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
@@ -63,17 +53,17 @@
             <div class="col-10 panel">
                 <div class="row">
                     <div class="col-lg">
-                        <img src="../img/employee.png" alt="..." class="float-left">
+                        <img src="https://i.vgy.me/JGUv1x.jpg" alt="..." class="float-left">
                         <h4>24 Hours</h4>
                         <p>Customer Service ready to help you</p>
                     </div>
                     <div class="col-lg">
-                        <img src="../img/hires.png" alt="..." class="float-left">
+                        <img src="https://i.vgy.me/JGUv1x.jpg" alt="..." class="float-left">
                         <h4>Fast</h4>
                         <p>Delivery in just a second</p>
                     </div>
                     <div class="col-lg">
-                        <img src="../img/security.png" alt="..." class="float-left">
+                        <img src="https://i.vgy.me/JGUv1x.jpg" alt="..." class="float-left">
                         <h4>Guarantee</h4>
                         <p>Easy return within 7 days</p>
                     </div>
@@ -90,19 +80,13 @@
             </ol>
             <div class="carousel-inner shadow-lg p-3 mb-5  rounded">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 rounded"
-                        src="https://i.vgy.me/3WfPV1.png"
-                        alt="First slide">
+                    <img class="d-block w-100 rounded" src="https://i.vgy.me/3WfPV1.png" alt="First slide">
                 </div>
                 <div class="carousel-item rounded">
-                    <img class="d-block w-100"
-                        src="https://i.vgy.me/WVhkMq.png"
-                        alt="Second slide">
+                    <img class="d-block w-100" src="https://i.vgy.me/WVhkMq.png" alt="Second slide">
                 </div>
                 <div class="carousel-item rounded">
-                    <img class="d-block w-100"
-                        src="https://i.vgy.me/pI0Y7d.png"
-                        alt="Third slide">
+                    <img class="d-block w-100" src="https://i.vgy.me/pI0Y7d.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -142,6 +126,7 @@
         </div>
         <!--Akhir welcome-->
 
+        <!--Produk-->
         <div class="row text-center">
             <div class="col ukLogo">
                 <img src="../img/eth.logo.png" alt="" style="width: 200px;">
@@ -153,5 +138,27 @@
                 <img src="../img/bnb.logo.png" alt="" style="width: 200px;">
             </div>
         </div>
+        <!--Akhir Produk-->
+
+        <!--About us-->
+
+
+
+        <!--Akhir About us-->
+
+
+         <!--Partner-->  
+
+
+
+         <!--Akhir partners-->
+         
+
+        <a href="https://api.whatsapp.com/send?phone=62895347196765" target="_blank">
+            <button class="btn-floating whatsapp">
+                <img src="https://i.vgy.me/emEfde.png" alt="whatsApp" class="tombolwa">
+                <span>(+62) 8953-4719-6765</span>
+            </button>
+        </a>
     </div>
 @endsection
