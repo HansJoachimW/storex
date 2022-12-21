@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Platform extends Model
 {
@@ -13,13 +12,12 @@ class Platform extends Model
 
     protected $fillable = [
         'platform_name',
-        'logo',
-        'subdistributor_id'
+        'logo'
     ];
 
-    public function subdistributors(): HasOne
+    public function subdistributors(): HasMany
     {
-        return $this->hasOne(Subdistributor::class);
+        return $this->hasMany(Subdistributor::class);
     }
 
     public function products(): HasMany

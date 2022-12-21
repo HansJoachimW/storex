@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('subdistributors', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('subdistributor_name');
+            $table->foreignIdFor(\App\Models\Platform::class);
             $table->timestamps();
         });
     }

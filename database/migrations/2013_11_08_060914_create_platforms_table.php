@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('platforms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('platform_name');
             $table->string('logo');
-            $table->unsignedBigInteger('subdistributor');
-            $table->foreign('subdistributor')->references('id')->on('subdistributors')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

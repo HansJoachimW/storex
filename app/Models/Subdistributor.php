@@ -4,18 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Subdistributor extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'subdistributor_name'
+        'subdistributor_name',
+        'platform_id'
     ];
 
-    public function platforms(): HasMany
+    public function platforms(): HasOne
     {
-        return $this->hasMany(Product::class);
+        return $this->hasOne(Product::class);
     }
 }

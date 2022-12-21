@@ -130,5 +130,10 @@ class BrandSeeder extends Seeder
             'logo' => '',
             'origin' => ''
         ]);
+        Brand::factory()->create([
+            'brand_name' => 'TP-Link',
+            'logo' => '',
+            'origin' => ''
+        ]);
     }
 }

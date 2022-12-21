@@ -15,12 +15,9 @@ return new class extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user');
-            $table->foreign('user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('added_products');
-            $table->foreign('added_products')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignIdFor(\App\Models\User::class);
+            $table->foreignIdFor(\App\Models\Product::class);
             $table->integer('quantity');
-            $table->integer('stock');
             $table->double('subtotal', '12, 2');
             $table->timestamps();
         });

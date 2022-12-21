@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('platform_shop');
-            $table->foreign('platform_shop')->references('id')->on('platforms')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('product_shop');
-            $table->foreign('product_shop')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignIdFor(\App\Models\Platform::class);
+            $table->foreignIdFor(\App\Models\Product::class);
             $table->timestamps();
         });
     }

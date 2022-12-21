@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('discounts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('discount_promo');
-            $table->foreign('discount_promo')->references('id')->on('promos')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('product_promo');
-            $table->foreign('product_promo')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignIdFor(\App\Models\Promo::class);
+            $table->foreignIdFor(\App\Models\Product::class);
             $table->timestamps();
         });
     }

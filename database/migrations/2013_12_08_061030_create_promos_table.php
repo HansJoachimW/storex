@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('promos', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('promo_name');
             $table->integer('uses');
             $table->decimal('amount', 5, 2);
             $table->timestamps();

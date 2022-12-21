@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="#"><img
                     src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/11/24/968e9cdc-8dc0-40be-96bd-649ac23b2424.png"
                     alt="" width="50px" height=""></a>
-            <a href="" class="navbar-brand mr-5" style="font-size: 30px">Storex Indonesia</a>
+            <a href="" class="navbar-brand mr-5" style="font-size: 30px">StoreX Indonesia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
                     <a class="nav-item nav-link" href="#AboutUs">About Us</a>
                     <a class="nav-item nav-link" href="#Partner">Partners</a>
                     <a class="nav-item nav-link" href="#Order">Order</a>
-                    <a class="btn btn-info" href="loginAdminPage.php" role="button">Guest</a>
+                    <a class="btn btn-info" href="/login" role="button">Guest</a>
 
 
                 </div>
