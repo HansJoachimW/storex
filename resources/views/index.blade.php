@@ -344,17 +344,17 @@
                         <span class="light-grey fs-6">on Feb 12, 2007 ⭐ ⭐ ⭐ ⭐ ⭐</span>
                     </div>
                     <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Is CSS float depricated?</a>
+                        <a href="https://shopee.co.id/buyer/530528897/rating">Contoh</a>
                     </div>
                     <div class="mt-auto">
                         <div class="d-flex align-items-center">
                             <div class="profile">
-                                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
                                     alt="">
                             </div>
                             <div class="ms-2">
-                                <div class="light-grey fs-6">Author</div>
-                                <div class="text-grey fs-5">Chris Coyirand</div>
+                                <div class="light-grey fs-6">Contoh</div>
+                                <div class="text-grey fs-5">Contoh</div>
                             </div>
                         </div>
                     </div>
@@ -365,17 +365,17 @@
                         <span class="light-grey fs-6">on Feb 12, 2007</span>
                     </div>
                     <div class="h5">
-                        <a href="#">Role of Dark Themes in modern UI</a>
+                        <a href="#">ContohI</a>
                     </div>
                     <div class="mt-auto">
                         <div class="d-flex align-items-center">
                             <div class="profile">
-                                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
                                     alt="">
                             </div>
                             <div class="ms-2">
-                                <div class="light-grey fs-6">Author</div>
-                                <div class="text-grey fs-5">Chris Coyirand</div>
+                                <div class="light-grey fs-6">Contoh</div>
+                                <div class="text-grey fs-5">Contoh</div>
                             </div>
                         </div>
                     </div>
@@ -386,17 +386,17 @@
                         <span class="light-grey fs-6">on Feb 12, 2007</span>
                     </div>
                     <div class="h5">
-                        <a href="#">Style Guides for Java language</a>
+                        <a href="#">Contoh</a>
                     </div>
                     <div class="mt-auto">
                         <div class="d-flex align-items-center">
                             <div class="profile">
-                                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
                                     alt="">
                             </div>
                             <div class="ms-2">
-                                <div class="light-grey fs-6">Author</div>
-                                <div class="text-grey fs-5">Chris Coyirand</div>
+                                <div class="light-grey fs-6">Contoh</div>
+                                <div class="text-grey fs-5">Contoh</div>
                             </div>
                         </div>
                     </div>
