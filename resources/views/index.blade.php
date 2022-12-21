@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="#"><img
                     src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/11/24/968e9cdc-8dc0-40be-96bd-649ac23b2424.png"
                     alt="" width="50px" height=""></a>
-
+            <a href="" class="navbar-brand mr-5" style="font-size: 30px">Storex Indonesia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,8 +18,8 @@
 
                     <a class="nav-item nav-link" href="#AllProducts">All Products</a>
                     <a class="nav-item nav-link" href="#AboutUs">About Us</a>
-                    <a class="nav-item nav-link" href="userPage.php">Partners</a>
-                    <a class="nav-item nav-link" href="CalculatorHP.php">Contact</a>
+                    <a class="nav-item nav-link" href="#Partner">Partners</a>
+                    <a class="nav-item nav-link" href="#Order">Order</a>
                     <a class="btn btn-info" href="loginAdminPage.php" role="button">Guest</a>
 
 
@@ -37,8 +37,8 @@
             </h1>
             <hr class="my-4">
             <a class="btn btn-info btn-lg mx-2 my-2" href="mailto:storexindonesia@gmail.com" role="button">Reach us</a>
-            <a class="btn border-info text-white btn-lg mx-2 my-2" href="https://nael.monster/kevin/assets/video/kevin.mp4"
-                role="button">Video kevin nyanyi</a>
+            <a class="btn border-info text-white btn-lg mx-2 my-2" href="https://wa.me/message/X4S4XSNV2K4LM1"
+                role="button">WhatsApp</a>
         </div>
     </div>
     <!--Akhir Jumbotron-->
@@ -97,7 +97,7 @@
         </div>
 
         <!--Welcome-->
-        <div class="row welcome mb-3">
+        <div class="row welcome mb-3 " id="AboutUs">
             <div class="col-sm">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt=""
                     class="img-fluid rounded ukGambar justify-content-center rounded">
@@ -139,23 +139,66 @@
         <!--Akhir Produk-->
 
         <!--About us-->
-        <div class="" id="AboutUs">
-            <h1>About Us</h1>
+        <div class="row "id="Order">
+            <h1>Find Us on</h1>
+            <ul class="list-unstyled">
+                <li class="media mt-2">
+                    <img class="mr-3" src="https://i.vgy.me/9MYQaA.png" alt="Shopee" width="100px">
+                    <div class="media-body">
+                        <a href="https://shopee.co.id/storexindonesia" class="btn btn-outline-warning"
+                            style="color: #ff541c">Shopee</a>
+                        <h5 class="mt-0 mb-1">@storexindonesia</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <img class="mr-3" src="https://i.vgy.me/HC8MCS.png" alt="Tokopedia" width="100px">
+                    <div class="media-body">
+                        <a href="https://www.tokopedia.com/storex" class="btn btn-outline-success">Tokopedia</a>
+                        <h5 class="mt-0 mb-1" href="https://shopee.co.id/storexindonesia">@storex</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <li class="media">
+                    <img class="mr-3 mb-4" src="https://i.vgy.me/oJEgdW.png" alt="Tiktok" width="100px">
+                    <div class="media-body">
+                        <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-dark">Tiktok</a>
+                        <h5 class="mt-0 mb-1">@storexindonesia</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <li class="media">
+                    <img class="mr-3" src="https://i.vgy.me/emEfde.png" alt="WhatsApp" width="100px">
+                    <div class="media-body">
+                        <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-success">WhatsApp</a>
+                        <h5 class="mt-0 mb-1">@Customer Support</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+            </ul>
         </div>
-        
-
 
         <!--Akhir About us-->
 
 
         <!--Partner-->
 
-
+        <div class="" id="Partner">
+            <h1>Partner</h1>
+        </div>
 
         <!--Akhir partners-->
 
-    
-      
+
+
 
         <a href="https://wa.me/message/X4S4XSNV2K4LM1" target="_blank">
             <button class="btn-floating whatsapp">
@@ -166,11 +209,10 @@
 
         <a href="#" target="">
             <button class="btn-backtotop top1 ">
-                <img src="https://i.vgy.me/myrtXR.png" alt="Back to top" class="top2" >
+                <img src="https://i.vgy.me/myrtXR.png" alt="Back to top" class="top2">
                 <span>Top</span>
-                
+
             </button>
         </a>
     </div>
-    
 @endsection

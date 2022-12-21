@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(10deg, #c0c4c4 0%, #a9b8cd 100%);
+    background: linear-gradient(10deg, #fbfbfb 0%, #fffcfc 100%);
 }
 
 /* Jumbotron*/
@@ -324,6 +324,7 @@ body {
         width: 50px;
 
     }
+    
 
     
 }
