@@ -228,6 +228,52 @@ body {
 
 
 
+    
+   
+    /* Button backtotop nya */
+    .btn-backtotop {
+        position: fixed;
+        left: 5px;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: 0;
+        z-index: 9999;
+        color: white;
+        transition: .2s;
+      
+    }
+
+    .btn-backtotop.top1 {
+        bottom: 10px;
+        background-color: #ffffff;
+        border: 2px solid #fff;
+      
+    }
+    .btn-backtotop:hover {
+        width: auto;
+        padding: 0 25px;
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .btn-backtotop span {
+        font-size: 16px;
+        margin-left: 5px;
+        transition: .2s;
+        line-height: 0px;
+        display: none;
+    }
+
+    .top2{
+        width: 30px;
+        
+    }
+
+    
+
+   
     /* Button whatsapp nya */
     .btn-floating {
         position: fixed;

@@ -16,8 +16,8 @@
                 <div class="navbar-nav ms-auto">
                     <!--<a class="nav-item nav-link active" aria-current="page" href="#">StoreX</a>-->
 
-                    <a class="nav-item nav-link" href="/aboutus">All Products</a>
-                    <a class="nav-item nav-link" href="newRecomPage.php">About Us</a>
+                    <a class="nav-item nav-link" href="#AllProducts">All Products</a>
+                    <a class="nav-item nav-link" href="#AboutUs">About Us</a>
                     <a class="nav-item nav-link" href="userPage.php">Partners</a>
                     <a class="nav-item nav-link" href="CalculatorHP.php">Contact</a>
                     <a class="btn btn-info" href="loginAdminPage.php" role="button">Guest</a>
@@ -125,7 +125,7 @@
 
         <!--Produk-->
         <h1>Products</h1>
-        <div class="row text-center aboutus">
+        <div class="row text-center aboutus" id="AllProducts">
             <div class="col ukLogo">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
@@ -139,7 +139,10 @@
         <!--Akhir Produk-->
 
         <!--About us-->
-        <h1>About Us</h1>
+        <div class="" id="AboutUs">
+            <h1>About Us</h1>
+        </div>
+        
 
 
         <!--Akhir About us-->
@@ -158,6 +161,14 @@
             <button class="btn-floating whatsapp">
                 <img src="https://i.vgy.me/emEfde.png" alt="whatsApp" class="tombolwa">
                 <span>(+62) 8953-4719-6765</span>
+            </button>
+        </a>
+
+        <a href="#" target="">
+            <button class="btn-backtotop top1 ">
+                <img src="https://i.vgy.me/myrtXR.png" alt="Back to top" class="top2" >
+                <span>Top</span>
+                
             </button>
         </a>
     </div>
