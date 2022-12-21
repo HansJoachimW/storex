@@ -16,7 +16,7 @@
                 <div class="navbar-nav ms-auto">
                     <!--<a class="nav-item nav-link active" aria-current="page" href="#">StoreX</a>-->
 
-                    <a class="nav-item nav-link" href="koinPage.php">All Products</a>
+                    <a class="nav-item nav-link" href="/aboutus">All Products</a>
                     <a class="nav-item nav-link" href="newRecomPage.php">About Us</a>
                     <a class="nav-item nav-link" href="userPage.php">Partners</a>
                     <a class="nav-item nav-link" href="CalculatorHP.php">Contact</a>
@@ -99,7 +99,7 @@
         <!--Welcome-->
         <div class="row welcome mb-3">
             <div class="col-sm">
-                <img src="../img/pic1.jpg" alt=""
+                <img src="https://i.vgy.me/B6NhmK.jpg" alt=""
                     class="img-fluid rounded ukGambar justify-content-center rounded">
             </div>
             <div class="col">
@@ -125,15 +125,15 @@
 
         <!--Produk-->
         <h1>Products</h1>
-        <div class="row text-center">
+        <div class="row text-center aboutus">
             <div class="col ukLogo">
-                <img src="../img/eth.logo.png" alt="" style="width: 200px;">
+                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
             <div class="col">
-                <img src="../img/bitcoin.logo.png" alt="" style="width: 300px;">
+                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 300px;">
             </div>
             <div class="col">
-                <img src="../img/bnb.logo.png" alt="" style="width: 200px;">
+                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
         </div>
         <!--Akhir Produk-->
@@ -151,6 +151,8 @@
 
         <!--Akhir partners-->
 
+    
+      
 
         <a href="https://wa.me/message/X4S4XSNV2K4LM1" target="_blank">
             <button class="btn-floating whatsapp">
@@ -159,4 +161,5 @@
             </button>
         </a>
     </div>
+    
 @endsection
