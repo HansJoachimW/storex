@@ -324,7 +324,133 @@ body {
         width: 50px;
 
     }
-    
+     /* Testimonial  */
+     /* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap');
 
+/* Reseting */
+
+
+
+
+.containertesti {
+    overflow: auto;
+}
+
+.cardstesti {
+    overflow: auto;
+    min-height: 550px;
+}
+
+.cardtesti {
+    background: #b69f9f;
+    background: linear-gradient(to right, #4fb17d, rgb(32, 196, 32));
+    min-width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 25px #4f16ab9d;
+    padding: 20px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.cardtesti .text-grey {
+    color: rgb(194, 22, 22);
+    font-weight: 500;
+}
+
+.cardtesti .light-grey {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.cardtesti .fs-5 {
+    font-size: 1.15rem !important;
+}
+
+.cardtesti a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.cardtesti .profile img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 15px rgba(26, 25, 25, 0.329);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cardtesti:not(:first-child) {
+    margin-left: -8rem;
+}
+
+.cardstesti::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cardstesti::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+.cardstesti::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    background: linear-gradient(to right, #37b53e, #17d831);
+    /* background: ; */
+    border-radius: 10px;
+}
+
+
+.cardtesti:hover,
+.cardtesti:focus-within {
+    transform: translateY(-1rem) rotateZ(5deg);
+}
+
+.cardtesti:hover~.card,
+.cardtesti:focus-within~.card {
+    transform: translateX(8rem);
+}
+
+.cardtesti .designation {
+    display: inline;
+    border-radius: 10px;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+}
     
+/* Akhir Testimonial */
+
+.keren{
+    position:relative;
+    font-size:2rem;
+    font-family:sans-serif;
+    -webkit-text-stroke:0.1vw #383d52;
+    text-transform:uppercase;
+    margin-bottom: -100px;
+}
+.keren::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#4fed51;
+
+    -webkit-text-stroke:0vw #523838;
+    border-right:2px solid #4fed51;
+    overflow:hidden;
+    /* transition:animate 6s linear infinite; */
+     animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+    width:0;
+}
+50%{
+    width:21%;
+}
+}
 }
