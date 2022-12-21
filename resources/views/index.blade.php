@@ -1,9 +1,6 @@
 @extends('layouts.main')
 
 @section('container')
-    
-
-   
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
@@ -127,6 +124,7 @@
         <!--Akhir welcome-->
 
         <!--Produk-->
+        <h1>Products</h1>
         <div class="row text-center">
             <div class="col ukLogo">
                 <img src="../img/eth.logo.png" alt="" style="width: 200px;">
@@ -141,20 +139,20 @@
         <!--Akhir Produk-->
 
         <!--About us-->
-
+        <h1>About Us</h1>
 
 
         <!--Akhir About us-->
 
 
-         <!--Partner-->  
+        <!--Partner-->
 
 
 
-         <!--Akhir partners-->
-         
+        <!--Akhir partners-->
 
-        <a href="https://api.whatsapp.com/send?phone=62895347196765" target="_blank">
+
+        <a href="https://wa.me/message/X4S4XSNV2K4LM1" target="_blank">
             <button class="btn-floating whatsapp">
                 <img src="https://i.vgy.me/emEfde.png" alt="whatsApp" class="tombolwa">
                 <span>(+62) 8953-4719-6765</span>

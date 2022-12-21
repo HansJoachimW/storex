@@ -12,6 +12,10 @@
     font-size: 32px;
 }
 
+body {
+    background: linear-gradient(10deg, #c0c4c4 0%, #a9b8cd 100%);
+}
+
 /* Jumbotron*/
 
 .jumbotron {
@@ -220,9 +224,7 @@
     }
 
 
-    body {
-        background: linear-gradient(10deg, #c0c4c4 0%, #a9b8cd 100%);
-    }
+    
 
 
 
