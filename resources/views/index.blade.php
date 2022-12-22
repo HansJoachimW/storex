@@ -16,11 +16,31 @@
                 <div class="navbar-nav ms-auto">
                     <!--<a class="nav-item nav-link active" aria-current="page" href="#">StoreX</a>-->
 
-                    <a class="nav-item nav-link" href="#AllProducts">All Products</a>
-                    <a class="nav-item nav-link" href="#AboutUs">About Us</a>
-                    <a class="nav-item nav-link" href="#Partner">Partners</a>
-                    <a class="nav-item nav-link" href="#Order">Order</a>
-                    <a class="btn btn-info" href="/login" role="button">Guest</a>
+                    <li class="nav-item"><a class="nav-link" href="#AllProducts">All Products</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="#AboutUs">About Us</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="#Partner">Partners</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="#Order">Order</a></li>
+                    <li class="nav-item">
+                        @auth
+                            @if (auth()->user()->role_id === 1)
+                                <a class="nav-link"
+                                    href="/admin">Admin</a>
+                            @endif
+                        @endauth
+                    </li>
+                    <li class="nav-item">
+                        @auth
+                            <form action="/logout" method="POST">
+                                @csrf
+                                <button type="submit" class="btn font_sen_700">Logout</button>
+                            </form>
+                        @endauth
+
+                        @guest
+                            <a class="nav-link"
+                                aria-current="page" href="/login" id="link_product">Login</a>
+                        @endguest
+                    </li>
 
 
                 </div>
@@ -164,274 +184,276 @@
                     </div>
                 @endforeach
             </div>
-        <!--Akhir Produk-->
+            {{ $products->links() }}
+            <!--Akhir Produk-->
 
-        <!--About us-->
-        <div class="row "id="Order">
-            <h1>Find Us on</h1>
-            <ul class="list-unstyled">
-                <li class="media mt-2">
-                    <img class="mr-3" src="https://i.vgy.me/9MYQaA.png" alt="Shopee" width="100px">
-                    <div class="media-body">
-                        <a href="https://shopee.co.id/storexindonesia" class="btn btn-outline-warning"
-                            style="color: #ff541c">Shopee</a>
-                        <h5 class="mt-0 mb-1">@storexindonesia</h5>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
-                        distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
-                        temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
-                    </div>
-                </li>
-                <li class="media my-4">
-                    <img class="mr-3" src="https://i.vgy.me/HC8MCS.png" alt="Tokopedia" width="100px">
-                    <div class="media-body">
-                        <a href="https://www.tokopedia.com/storex" class="btn btn-outline-success">Tokopedia</a>
-                        <h5 class="mt-0 mb-1" href="https://shopee.co.id/storexindonesia">@storex</h5>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
-                        distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
-                        temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
-                    </div>
-                </li>
-                <li class="media">
-                    <img class="mr-3 mb-4" src="https://i.vgy.me/oJEgdW.png" alt="Tiktok" width="100px">
-                    <div class="media-body">
-                        <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-dark">Tiktok</a>
-                        <h5 class="mt-0 mb-1">@storexindonesia</h5>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
-                        distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
-                        temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
-                    </div>
-                </li>
-                <li class="media">
-                    <img class="mr-3" src="https://i.vgy.me/emEfde.png" alt="WhatsApp" width="100px">
-                    <div class="media-body">
-                        <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-success">WhatsApp</a>
-                        <h5 class="mt-0 mb-1">@Customer Support</h5>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
-                        distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
-                        temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <!--About us-->
+            <div class="row "id="Order">
+                <h1>Find Us on</h1>
+                <ul class="list-unstyled">
+                    <li class="media mt-2">
+                        <img class="mr-3" src="https://i.vgy.me/9MYQaA.png" alt="Shopee" width="100px">
+                        <div class="media-body">
+                            <a href="https://shopee.co.id/storexindonesia" class="btn btn-outline-warning"
+                                style="color: #ff541c">Shopee</a>
+                            <h5 class="mt-0 mb-1">@storexindonesia</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
+                            distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
+                            temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img class="mr-3" src="https://i.vgy.me/HC8MCS.png" alt="Tokopedia" width="100px">
+                        <div class="media-body">
+                            <a href="https://www.tokopedia.com/storex" class="btn btn-outline-success">Tokopedia</a>
+                            <h5 class="mt-0 mb-1" href="https://shopee.co.id/storexindonesia">@storex</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
+                            distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
+                            temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3 mb-4" src="https://i.vgy.me/oJEgdW.png" alt="Tiktok" width="100px">
+                        <div class="media-body">
+                            <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-dark">Tiktok</a>
+                            <h5 class="mt-0 mb-1">@storexindonesia</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
+                            distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
+                            temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="https://i.vgy.me/emEfde.png" alt="WhatsApp" width="100px">
+                        <div class="media-body">
+                            <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-success">WhatsApp</a>
+                            <h5 class="mt-0 mb-1">@Customer Support</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
+                            distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
+                            temporibus veritatis tempora quaerat ducimus aliquam aspernatur.
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-        <!--Akhir About us-->
-
-
-        <!--Partner-->
-
-        <div class="" id="Partner">
-            <h1>Partner</h1>
-        </div>
-
-        <!--Akhir partners-->
+            <!--Akhir About us-->
 
 
+            <!--Partner-->
+
+            <div class="" id="Partner">
+                <h1>Partner</h1>
+            </div>
+
+            <!--Akhir partners-->
 
 
-        <a href="https://wa.me/message/X4S4XSNV2K4LM1" target="_blank">
-            <button class="btn-floating whatsapp">
-                <img src="https://i.vgy.me/emEfde.png" alt="whatsApp" class="tombolwa">
-                <span>(+62) 8953-4719-6765</span>
-            </button>
-        </a>
 
-        <a href="#" target="">
-            <button class="btn-backtotop top1 ">
-                <img src="https://i.vgy.me/myrtXR.png" alt="Back to top" class="top2">
-                <span>Top</span>
 
-            </button>
-        </a>
+            <a href="https://wa.me/message/X4S4XSNV2K4LM1" target="_blank">
+                <button class="btn-floating whatsapp">
+                    <img src="https://i.vgy.me/emEfde.png" alt="whatsApp" class="tombolwa">
+                    <span>(+62) 8953-4719-6765</span>
+                </button>
+            </a>
 
-        
+            <a href="#" target="">
+                <button class="btn-backtotop top1 ">
+                    <img src="https://i.vgy.me/myrtXR.png" alt="Back to top" class="top2">
+                    <span>Top</span>
 
-        {{-- Testimonial --}}
-        <h2 data-text="Kata mereka" class="keren">Kata mereka</h2>
-        <div class="containertesti mt-5">
-            <div class="d-flex align-items-center cardstesti">
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Shopee <br> 8-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Puas</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://cf.shopee.co.id/file/c8f14f42079eef76cdfbcac317af0ad9_tn"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">BARDI Smart CCTV PTZ</div>
-                                <div class="text-grey fs-5">abiwahdan</div>
+                </button>
+            </a>
+
+
+
+            {{-- Testimonial --}}
+            <h2 data-text="Kata mereka" class="keren">Kata mereka</h2>
+            <div class="containertesti mt-5">
+                <div class="d-flex align-items-center cardstesti">
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Shopee <br> 8-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Puas</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://cf.shopee.co.id/file/c8f14f42079eef76cdfbcac317af0ad9_tn"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">BARDI Smart CCTV PTZ</div>
+                                    <div class="text-grey fs-5">abiwahdan</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Shopee <br> 5-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Terima kasih kak gercep kirimnyaaa</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://cf.shopee.co.id/file/8e777c3bcf76b6c0c203a88c97c423ed_tn"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">BARDI Smart CCTV Outdoor STC</div>
-                                <div class="text-grey fs-5">t*****e</div>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Shopee <br> 5-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Terima kasih kak gercep kirimnyaaa</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://cf.shopee.co.id/file/8e777c3bcf76b6c0c203a88c97c423ed_tn"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">BARDI Smart CCTV Outdoor STC</div>
+                                    <div class="text-grey fs-5">t*****e</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Shopee <br> 4-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Fitur Terbaik:👍👍👍<br>
-                            Sepadan dengan Harga:👍👍👍<br>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Shopee <br> 4-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Fitur Terbaik:👍👍👍<br>
+                                Sepadan dengan Harga:👍👍👍<br>
 
-                            Penjual responsif... pengiriman cepat... terimakasih 👍👍👍</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">[READY TANPA PO] Bardi CCTV Outdoor Static Wifi Smart IP
-                                    Camera anti air STC Smarthome</div>
-                                <div class="text-grey fs-5">4bxz142__5</div>
+                                Penjual responsif... pengiriman cepat... terimakasih 👍👍👍</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">[READY TANPA PO] Bardi CCTV Outdoor Static Wifi Smart IP
+                                        Camera anti air STC Smarthome</div>
+                                    <div class="text-grey fs-5">4bxz142__5</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Shopee <br> 4-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Pengiriman cepat, respon penjual sangat baik, ramah dan menjelaskan secara detail
-                            <br>
-                            Rekomended deh buat toko ini👍</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">[READY] BARDI Smart CCTV PTZ STC Indoor Outdoor GARANSI 1
-                                    TAHUN</div>
-                                <div class="text-grey fs-5">teguhprihan286</div>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Shopee <br> 4-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Pengiriman cepat, respon penjual sangat
+                                baik, ramah dan menjelaskan secara detail
+                                <br>
+                                Rekomended deh buat toko ini👍</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">[READY] BARDI Smart CCTV PTZ STC Indoor Outdoor GARANSI 1
+                                        TAHUN</div>
+                                    <div class="text-grey fs-5">teguhprihan286</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Shopee <br> 2-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Sepadan dengan Harga:baju <br>
-                            Fitur Terbaik:cctv <br>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Shopee <br> 2-12-22 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Sepadan dengan Harga:baju <br>
+                                Fitur Terbaik:cctv <br>
 
-                            Bagus, biar tambah aman dan pencurinya ketangkep xixixixi. Respon
-                            penjual cepat dan ramah</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://cf.shopee.co.id/file/e41c138287e07f1ef94ca30770afd5e2_tn"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">BARDI Smart Indoor PTZ IP Camera CCTV 360 Wifi IoT Home
-                                    Automation 1080p Full HD Surabaya</div>
-                                <div class="text-grey fs-5">a*****a</div>
+                                Bagus, biar tambah aman dan pencurinya ketangkep xixixixi. Respon
+                                penjual cepat dan ramah</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://cf.shopee.co.id/file/e41c138287e07f1ef94ca30770afd5e2_tn"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">BARDI Smart Indoor PTZ IP Camera CCTV 360 Wifi IoT Home
+                                        Automation 1080p Full HD Surabaya</div>
+                                    <div class="text-grey fs-5">a*****a</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Feb 12, 2007 ⭐ ⭐ ⭐ ⭐ ⭐</span>
-                    </div>
-                    <div class="h5">
-                        <a href="https://shopee.co.id/buyer/530528897/rating">Contoh</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">Contoh</div>
-                                <div class="text-grey fs-5">Contoh</div>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Feb 12, 2007 ⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="h5">
+                            <a href="https://shopee.co.id/buyer/530528897/rating">Contoh</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">Contoh</div>
+                                    <div class="text-grey fs-5">Contoh</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Feb 12, 2007</span>
-                    </div>
-                    <div class="h5">
-                        <a href="#">ContohI</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">Contoh</div>
-                                <div class="text-grey fs-5">Contoh</div>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Feb 12, 2007</span>
+                        </div>
+                        <div class="h5">
+                            <a href="#">ContohI</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">Contoh</div>
+                                    <div class="text-grey fs-5">Contoh</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="cardtesti">
-                    <div class="mb-3">
-                        <span class="text-grey fs-5">Review</span>
-                        <span class="light-grey fs-6">on Feb 12, 2007</span>
-                    </div>
-                    <div class="h5">
-                        <a href="#">Contoh</a>
-                    </div>
-                    <div class="mt-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="profile">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                                    alt="">
-                            </div>
-                            <div class="ms-2">
-                                <div class="light-grey fs-6">Contoh</div>
-                                <div class="text-grey fs-5">Contoh</div>
+                    <div class="cardtesti">
+                        <div class="mb-3">
+                            <span class="text-grey fs-5">Review</span>
+                            <span class="light-grey fs-6">on Feb 12, 2007</span>
+                        </div>
+                        <div class="h5">
+                            <a href="#">Contoh</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="profile">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                        alt="">
+                                </div>
+                                <div class="ms-2">
+                                    <div class="light-grey fs-6">Contoh</div>
+                                    <div class="text-grey fs-5">Contoh</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        {{-- Akhir Testimonial --}}
-    </div>
-@endsection
+            {{-- Akhir Testimonial --}}
+        </div>
+    @endsection

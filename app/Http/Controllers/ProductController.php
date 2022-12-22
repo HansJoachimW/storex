@@ -15,7 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view('index', [
+            'products' => Product::paginate(2)
+        ]);
     }
 
     /**
@@ -25,7 +27,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('createproduct', [
+            'products' => Product::all()
+        ]);
     }
 
     /**
@@ -36,7 +40,22 @@ class ProductController extends Controller
      */
     public function store(StoreProductRequest $request)
     {
-        //
+        $this->validate($request, [
+            'product_name' => 'required|string|max:155',
+            'category' => 'required|string|max:155',
+            'image' => 'required|image',
+            'price' => 'required|string|max:155'
+        ]);
+
+        Product::create([
+            'product_name' => $request->name,
+            'category' => $request->category,
+            'image' => $request->file('image')->store('images', 'public'),
+            'price' => $request->price,
+            'brand_id' => $request->brand_id
+        ]);
+
+        return redirect('/');
     }
 
     /**
@@ -47,7 +66,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('showproduct', [
+            'product' => $product
+        ]);
     }
 
     /**
@@ -58,7 +79,9 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('updateproduct', [
+            'product'  => $product
+        ]);
     }
 
     /**
@@ -70,7 +93,23 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, Product $product)
     {
-        //
+        if ($request->file('image')) {
+            unlink('storage/' . $product->image);
+            $product->update([
+                'product_name' => $request->name,
+                'category' => $request->category,
+                'price' => $request->price,
+                'image' => $request->file('image')->store('images', 'public'),
+            ]);
+        } else {
+            $product->update([
+                'product_name' => $request->name,
+                'category' => $request->category,
+                'price' => $request->price,
+            ]);
+        }
+
+        return redirect('/');
     }
 
     /**
@@ -81,6 +120,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+
+        return redirect('/');
     }
 }
