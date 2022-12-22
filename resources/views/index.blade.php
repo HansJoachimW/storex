@@ -23,7 +23,7 @@
                     <li class="nav-item">
                         @auth
                             @if (auth()->user()->role_id === 1)
-                                <a class="nav-link" href="/admin">Admin</a>
+                                <a class="nav-link btn btn-warning" href="/admin">Admin</a>
                             @endif
                         @endauth
                     </li>
@@ -31,7 +31,7 @@
                         @auth
                             <form action="/logout" method="POST">
                                 @csrf
-                                <button type="submit" class="btn font_sen_700">Logout</button>
+                                <button type="submit" class="btn btn-danger font_sen_700" style="color: aliceblue">Logout</button>
                             </form>
                         @endauth
 
@@ -142,7 +142,7 @@
         <!--Akhir welcome-->
 
         <!--Produk-->
-        <h1>Products</h1>
+        <h1 id="AllProducts">Products</h1>
         {{-- <div class="row text-center aboutus" id="AllProducts">
             <div class="col ukLogo">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
@@ -188,7 +188,7 @@
                     </div>
                 @endforeach
             </div>
-            {{ $products->links() }}
+            {{ $products->links() }} {{-- Pagination --}}
             <!--Akhir Produk-->
 
             <!--About us-->
