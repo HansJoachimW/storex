@@ -166,11 +166,11 @@
                         <h3 class="font_sen_800">{{ $pd->name }}</h3>
                         <p class="font_sen_400">{{ $pd->category }}</p>
                         <div class="d-flex justify-content-between align-items-start">
-                            <p class="font_sen_700">{{ $pd->price }}</p>
+                            <p class="font_sen_700">Rp. {{ $pd->price }}, 00</p>
                             <button class="border border-2 border-primary rounded"><a href="/product/{{ $pd->id }}"
                                     class="text-decoration-none text-reset font_sen_400">Details</a></button>
                         </div>
-                        @if (Auth::check() && Auth::user()->status == 'admin')
+                        @if (Auth::check() && Auth::user()->role_id === 1)
                             <div class="mt-2">
                                 <a href="{{ route('products.edit', $pd) }}"
                                     class="rounded-pill btn btn-outline-success">Update</a>

@@ -83,7 +83,8 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         return view('updateproduct', [
-            'product'  => $product
+            'product'  => $product,
+            'brands' => Brand::all()
         ]);
     }
 
@@ -99,14 +100,14 @@ class ProductController extends Controller
         if ($request->file('image')) {
             unlink('storage/' . $product->image);
             $product->update([
-                'product_name' => $request->name,
+                'name' => $request->name,
                 'category' => $request->category,
                 'price' => $request->price,
                 'image' => $request->file('image')->store('images', 'public'),
             ]);
         } else {
             $product->update([
-                'product_name' => $request->name,
+                'name' => $request->name,
                 'category' => $request->category,
                 'price' => $request->price,
             ]);
