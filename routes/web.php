@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +19,13 @@ use Illuminate\Support\Facades\Route;
 //main
 Route::resource('products', ProductController::class)->middleware('admin');
 
+Route::resource('brands', BrandController::class)->middleware('admin');
+
 Route::get('/', [ProductController::class, 'index'])->name('index');
 
 Route::get('/product/{product}', [ProductController::class, 'show']);
+
+Route::get('/brand/{brand}', [BrandController::class, 'show']);
 
 //welcome
 Route::get('/welcome', function () {

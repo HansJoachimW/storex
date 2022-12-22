@@ -141,17 +141,6 @@
 
         <!--Produk-->
         <h1>Products</h1>
-        {{-- <div class="row text-center aboutus" id="AllProducts">
-            <div class="col ukLogo">
-                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
-            </div>
-            <div class="col">
-                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 300px;">
-            </div>
-            <div class="col">
-                <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
-            </div>
-        </div> --}}
 
         @if (Auth::check() && Auth::user()->role_id === 1)
             <a href="{{ route('products.create') }}" class="btn btn-outline-primary">Create</a>
@@ -245,6 +234,36 @@
             <div class="" id="Partner">
                 <h1>Partner</h1>
             </div>
+
+            <div class="mx-5">
+                <div class="row">
+                    @foreach ($brands as $br)
+                        <div class="col p-5 m-2 border border-2 border-primary rounded">
+                            <img src="/images/{{ $br->logo }}" alt="Foto tidak ditemukan"
+                                class="mx-auto d-block rounded-3" style="height: 200px;">
+                            <h3 class="font_sen_800">{{ $br->brand_name }}</h3>
+                            <p class="font_sen_400">{{ $br->origin }}</p>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <button class="border border-2 border-primary rounded"><a href="/brand/{{ $br->id }}"
+                                        class="text-decoration-none text-reset font_sen_400">Details</a></button>
+                            </div>
+                            @if (Auth::check() && Auth::user()->role_id === 1)
+                                <div class="mt-2">
+                                    <a href="{{ route('brands.edit', $br) }}"
+                                        class="rounded-pill btn btn-outline-success">Update</a>
+                                </div>
+                                <div class="mt-2">
+                                    <form action="{{ route('brands.destroy', $br) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="rounded-pill btn btn-danger">Delete</button>
+                                    </form>
+                                </div>
+                            @endif
+                        </div>
+                    @endforeach
+                </div>
+                {{ $brands->links() }}
 
             <!--Akhir partners-->
 
