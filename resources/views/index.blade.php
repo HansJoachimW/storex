@@ -125,7 +125,7 @@
 
         <!--Produk-->
         <h1>Products</h1>
-        <div class="row text-center aboutus" id="AllProducts">
+        {{-- <div class="row text-center aboutus" id="AllProducts">
             <div class="col ukLogo">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
@@ -135,7 +135,36 @@
             <div class="col">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
-        </div>
+        </div> --}}
+        <div class="mx-5">
+            <div class="row">
+                @foreach ($products as $pd)
+                    <div class="col p-5 m-2">
+                        <img src="{{ asset('storage/' . $pd->image) }}" alt="Image not found"
+                            class="mx-auto d-block rounded-3" width="100%">
+                        <h3 class="font_sen_800">{{ $pd->name }}</h3>
+                        <p class="font_sen_400">{{ $pd->flavor }}</p>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <p class="font_sen_700">{{ $pd->price }}</p>
+                            <button class="rounded-pill"><a href="/product/{{ $pd->id }}"
+                                    class="text-decoration-none text-reset font_sen_400">Details</a></button>
+                        </div>
+                        @if (Auth::check() && Auth::user()->status == 'admin')
+                            <div class="mt-2">
+                                <a href="{{ route('products.edit', $pd) }}"
+                                    class="rounded-pill btn btn-outline-success">Update</a>
+                            </div>
+                            <div class="mt-2">
+                                <form action="{{ route('products.destroy', $pd) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="rounded-pill btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+                        @endif
+                    </div>
+                @endforeach
+            </div>
         <!--Akhir Produk-->
 
         <!--About us-->

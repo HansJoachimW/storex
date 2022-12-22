@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //main
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', [ProductController::class, 'index'])->name('index');
 
 //welcome
 Route::get('/welcome', function () {
@@ -25,7 +23,7 @@ Route::get('/welcome', function () {
 });
 
 //admin
-Route::get('/admin', function() {
+Route::get('/admin', function () {
     return view('admin/index');
 })->middleware(['admin']);
 
