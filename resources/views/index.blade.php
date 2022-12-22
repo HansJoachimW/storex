@@ -140,7 +140,7 @@
         <!--Akhir welcome-->
 
         <!--Produk-->
-        <h1>Products</h1>
+        <h1 id="AllProducts">Products</h1>
         {{-- <div class="row text-center aboutus" id="AllProducts">
             <div class="col ukLogo">
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
@@ -245,7 +245,9 @@
             <div class="" id="Partner">
                 <h1>Partner</h1>
             </div>
-
+            @if (Auth::check() && Auth::user()->role_id === 1)
+            <a href="{{ route('brands.create') }}" class="btn btn-outline-primary">Create new Brand</a>
+        @endif
             <div class="mx-5">
                 <div class="row">
                     @foreach ($brands as $br)
