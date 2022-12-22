@@ -24,7 +24,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 419000,
                         'stock' => 233,
-                        'image' => 'defaultproduct.jpg',
+                        'image' => 'BardiPTZ.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -56,7 +56,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 440000,
                         'stock' => 17,
-                        'image' => 'defaultproduct.jpg',
+                        'image' => 'BardiCCTVOutdoor.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 419000,
                         'stock' => 17,
-                        'image' => 'defaultproduct.jpg',
+                        'image' => 'BardiPTZ.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
