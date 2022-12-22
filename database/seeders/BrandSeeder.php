@@ -17,122 +17,122 @@ class BrandSeeder extends Seeder
     {
         Brand::factory()->create([
             'brand_name' => 'BARDI',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Logitech',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Fantech',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'StoreX',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Rexus',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Thronmax',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'AFTO',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Glass Pro',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Vention',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Baseus',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Avaro',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'SanDisk',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Fimi',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Yesoul',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Redragon',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Advance Digitals',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Robolife',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Welhome',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Advan',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'EviniX',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Matrix',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Luby',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'Nagoya',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
         Brand::factory()->create([
             'brand_name' => 'TP-Link',
-            'logo' => '',
+            'logo' => 'defaultproduct.jpg',
             'origin' => ''
         ]);
     }
