@@ -23,8 +23,7 @@
                     <li class="nav-item">
                         @auth
                             @if (auth()->user()->role_id === 1)
-                                <a class="nav-link"
-                                    href="/admin">Admin</a>
+                                <a class="nav-link" href="/admin">Admin</a>
                             @endif
                         @endauth
                     </li>
@@ -37,8 +36,7 @@
                         @endauth
 
                         @guest
-                            <a class="nav-link"
-                                aria-current="page" href="/login" id="link_product">Login</a>
+                            <a class="nav-link" aria-current="page" href="/login" id="link_product">Login</a>
                         @endguest
                     </li>
 
@@ -159,13 +157,14 @@
         <div class="mx-5">
             <div class="row">
                 @foreach ($products as $pd)
-                    <div class="col p-5 m-2">
-                        <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
-                        <h3 class="font_sen_800">{{ $pd->product_name }}</h3>
+                    <div class="col p-5 m-2 border border-2 border-primary rounded">
+                        <img src="/images/{{ $pd->image }}" alt="Foto tidak ditemukan"
+                            class="mx-auto d-block rounded-3" style="height: 200px;">
+                        <h3 class="font_sen_800">{{ $pd->name }}</h3>
                         <p class="font_sen_400">{{ $pd->category }}</p>
                         <div class="d-flex justify-content-between align-items-start">
                             <p class="font_sen_700">{{ $pd->price }}</p>
-                            <button class="rounded-pill"><a href="/product/{{ $pd->id }}"
+                            <button class="border border-2 border-primary rounded"><a href="/product/{{ $pd->id }}"
                                     class="text-decoration-none text-reset font_sen_400">Details</a></button>
                         </div>
                         @if (Auth::check() && Auth::user()->status == 'admin')

@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+.font_sen_400 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+.font_sen_700 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+
+.font_sen_800 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+}
+
 .fontKdam {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }

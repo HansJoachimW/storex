@@ -24,6 +24,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 419000,
                         'stock' => 233,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -31,6 +32,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 425000,
                         'stock' => 48,
+                        'image' => 'BardiPTZ.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -38,6 +40,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 440000,
                         'stock' => 82,
+                        'image' => 'BardiCCTVOutdoor.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -45,6 +48,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 448000,
                         'stock' => 191,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -52,6 +56,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 440000,
                         'stock' => 17,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -59,6 +64,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 419000,
                         'stock' => 17,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -66,6 +72,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 75000,
                         'stock' => 30,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -73,6 +80,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 75000,
                         'stock' => 9,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -80,6 +88,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 89000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -87,6 +96,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 645000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -94,6 +104,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 165000,
                         'stock' => 2,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -101,6 +112,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 99000,
                         'stock' => 999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -108,6 +120,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 140000,
                         'stock' => 998,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -115,6 +128,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 97000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -122,6 +136,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 320000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -129,6 +144,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 125000,
                         'stock' => 96,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -136,6 +152,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 950000,
                         'stock' => 99,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -143,6 +160,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 70000,
                         'stock' => 499,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -150,6 +168,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 230000,
                         'stock' => 9999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -157,6 +176,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 493000,
                         'stock' => 999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -164,6 +184,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Perlengkapan Rumah',
                         'price' => 470000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -171,6 +192,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Perlengkapan Rumah',
                         'price' => 2499000,
                         'stock' => 999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -178,6 +200,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Perlengkapan Rumah',
                         'price' => 2299000,
                         'stock' => 5,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -185,6 +208,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Hobi & Koleksi',
                         'price' => 250000,
                         'stock' => 999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -192,6 +216,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Hobi & Koleksi',
                         'price' => 899000,
                         'stock' => 500,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -199,6 +224,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Hobi & Koleksi',
                         'price' => 2450000,
                         'stock' => 500,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -208,6 +234,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 499000,
                         'stock' => 5,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -215,6 +242,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 390000,
                         'stock' => 394,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -222,6 +250,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 245000,
                         'stock' => 246,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -229,6 +258,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 280000,
                         'stock' => 495,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -238,6 +268,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 15000,
                         'stock' => 996,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -245,6 +276,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 87000,
                         'stock' => 998,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -252,6 +284,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 190000,
                         'stock' => 21,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -259,6 +292,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 279000,
                         'stock' => 99,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -266,6 +300,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 220000,
                         'stock' => 33,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -273,6 +308,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 140000,
                         'stock' => 99,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -280,6 +316,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 59000,
                         'stock' => 999,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -287,6 +324,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 25000,
                         'stock' => 93,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -294,6 +332,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 89000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -303,6 +342,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 35000,
                         'stock' => 4,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -310,6 +350,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 90000,
                         'stock' => 50,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -317,6 +358,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 250000,
                         'stock' => 3,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -324,6 +366,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 100000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -331,6 +374,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 120000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -338,6 +382,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 120000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -345,6 +390,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 120000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -354,6 +400,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 799000,
                         'stock' => 5,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -361,6 +408,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 419000,
                         'stock' => 20,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -368,6 +416,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 900000,
                         'stock' => 5,
+                        'image' => 'DaxaM64.png',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -375,6 +424,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 170000,
                         'stock' => 132,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     Product::factory()->create([
@@ -382,6 +432,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 499000,
                         'stock' => 5,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -391,6 +442,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 930000,
                         'stock' => 5,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -400,6 +452,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 120000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -413,6 +466,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 990000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -422,6 +476,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 280000,
                         'stock' => 1,
+                        'image' => 'AvaroPtz.png',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -430,6 +485,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Elektronik',
                         'price' => 69000,
                         'stock' => 27,
+                        'image' => 'Avaro12watt.png',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -439,6 +495,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 110000,
                         'stock' => 129,
+                        'image' => 'Sandisk64gb.png',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -448,6 +505,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Fotografi',
                         'price' => 2950000,
                         'stock' => 1,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -457,6 +515,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Handphone & Aksesoris',
                         'price' => 450000,
                         'stock' => 100,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -466,6 +525,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 499000,
                         'stock' => 10,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;
@@ -491,6 +551,7 @@ class ProductSeeder extends Seeder
                         'category' => 'Komputer & Aksesoris',
                         'price' => 160000,
                         'stock' => 98,
+                        'image' => 'defaultproduct.jpg',
                         'brand_id' => $brand->id
                     ]);
                     break;

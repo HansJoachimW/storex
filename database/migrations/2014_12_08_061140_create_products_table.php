@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('category');
             $table->double('price', 12, 2);
             $table->integer('stock');
+            $table->string('image')->nullable();
             $table->foreignIdFor(\App\Models\Brand::class);
             $table->timestamps();
         });
