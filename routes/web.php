@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 //main
+Route::resource('products', ProductController::class)->middleware('admin');
+
 Route::get('/', [ProductController::class, 'index'])->name('index');
 
 Route::get('/product/{product}', [ProductController::class, 'show']);

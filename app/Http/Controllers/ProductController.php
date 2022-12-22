@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use App\Models\Brand;
 
 class ProductController extends Controller
 {
@@ -18,6 +19,7 @@ class ProductController extends Controller
         return view('index', [
             'products' => Product::paginate(2)
         ]);
+        return redirect('#AllProducts');
     }
 
     /**
@@ -28,7 +30,7 @@ class ProductController extends Controller
     public function create()
     {
         return view('createproduct', [
-            'products' => Product::all()
+            'brands' => Brand::all()
         ]);
     }
 
@@ -44,7 +46,8 @@ class ProductController extends Controller
             'product_name' => 'required|string|max:155',
             'category' => 'required|string|max:155',
             'image' => 'required|image',
-            'price' => 'required|string|max:155'
+            'price' => 'required|string|max:155',
+            'stock' => 'required|integer'
         ]);
 
         Product::create([
@@ -52,6 +55,7 @@ class ProductController extends Controller
             'category' => $request->category,
             'image' => $request->file('image')->store('images', 'public'),
             'price' => $request->price,
+            'stock' => $request->stock,
             'brand_id' => $request->brand_id
         ]);
 

@@ -154,6 +154,11 @@
                 <img src="https://i.vgy.me/B6NhmK.jpg" alt="" style="width: 200px;">
             </div>
         </div> --}}
+
+        @if (Auth::check() && Auth::user()->role_id === 1)
+            <a href="{{ route('products.create') }}" class="btn btn-outline-primary">Create</a>
+        @endif
+
         <div class="mx-5">
             <div class="row">
                 @foreach ($products as $pd)
