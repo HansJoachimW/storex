@@ -19,7 +19,6 @@ class ProductController extends Controller
         return view('index', [
             'products' => Product::paginate(2)
         ]);
-        return redirect('#AllProducts');
     }
 
     /**

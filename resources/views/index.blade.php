@@ -31,7 +31,7 @@
                         @auth
                             <form action="/logout" method="POST">
                                 @csrf
-                                <button type="submit" class="btn font_sen_700">Logout</button>
+                                <button type="submit">Logout</button>
                             </form>
                         @endauth
 
@@ -39,8 +39,6 @@
                             <a class="nav-link" aria-current="page" href="/login" id="link_product">Login</a>
                         @endguest
                     </li>
-
-
                 </div>
             </div>
         </div>
