@@ -5,7 +5,7 @@
 
     <div class="mx-5 row">
         <div class="col-2 m-5">
-            <img src="/images/{{ $product->image }}" class="d-block rounded-3" height="300">
+            <img src="/images/{{ $product->image }}" class="d-block rounded-3" width="200">
         </div>
         <div class="col-6 m-5">
             <h2 class="font_sen_700">Name: <p class="font_sen_400">{{ $product->name }}</p>
