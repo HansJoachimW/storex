@@ -227,7 +227,7 @@
                     <li class="media">
                         <img class="mr-3" src="https://i.vgy.me/emEfde.png" alt="WhatsApp" width="100px">
                         <div class="media-body">
-                            <a href="https://www.tiktok.com/@storexindonesia" class="btn btn-outline-success">WhatsApp</a>
+                            <a href="https://wa.me/message/X4S4XSNV2K4LM1" class="btn btn-outline-success">WhatsApp</a>
                             <h5 class="mt-0 mb-1">@Customer Support</h5>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur sit quasi
                             distinctio. Qui sit aperiam aspernatur. Sapiente, minus. Voluptas asperiores reiciendis nisi
