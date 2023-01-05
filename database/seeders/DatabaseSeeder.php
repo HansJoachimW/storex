@@ -25,7 +25,8 @@ class DatabaseSeeder extends Seeder
             DiscountSeeder::class,
             RouteSeeder::class,
             ShopSeeder::class,
-            ProductSeeder::class
+            ProductSeeder::class,
+            CartSeeder::class
         ]);
     }
 }

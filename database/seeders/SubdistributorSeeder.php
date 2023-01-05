@@ -20,38 +20,21 @@ class SubdistributorSeeder extends Seeder
             switch ($platform->id) {
                 case 1:
                     Subdistributor::factory()->create([
-                        'subdistributor_name' => 'BARDI Smart Home',
-                        'platform_id' => $platform->id
-                    ]);
-                    Subdistributor::factory()->create([
-                        'subdistributor_name' => 'DORAN I Distributor Logitech Surabaya',
-                        'platform_id' => $platform->id
-                    ]);
-                    Subdistributor::factory()->create([
-                        'subdistributor_name' => 'Fantech Store Indonesia',
+                        'subdistributor_name' => 'HUB StoreX Tokopedia Surabaya',
                         'platform_id' => $platform->id
                     ]);
                     break;
                 case 2:
                     Subdistributor::factory()->create([
-                        'subdistributor_name' => 'StoreX',
-                        'platform_id' => $platform->id
-                    ]);
-                    Subdistributor::factory()->create([
-                        'subdistributor_name' => 'Rexus Indonesia',
+                        'subdistributor_name' => 'HUB StoreX Bukalapak Surabaya',
                         'platform_id' => $platform->id
                     ]);
                     break;
                 case 3:
                     Subdistributor::factory()->create([
-                        'subdistributor_name' => 'Master Dealer Sandisk Surabaya',
+                        'subdistributor_name' => 'HUB StoreX Shopee Surabaya',
                         'platform_id' => $platform->id
                     ]);
-                    Subdistributor::factory()->create([
-                        'subdistributor_name' => 'TP Link Surabaya',
-                        'platform_id' => $platform->id
-                    ]);
-                    break;
             }
         }
     }
